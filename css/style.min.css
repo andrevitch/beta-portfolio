@@ -77,6 +77,8 @@ h1 {
     text-align: center;
     display: block;
     color: rgb(33, 37, 41, .8);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
     text-decoration: none;
@@ -85,19 +87,30 @@ h1 {
 
 /* Common  */
 .brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .brand-link {
     text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .brand {
     text-align: center;
     overflow: visible;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -133,6 +146,7 @@ h1 {
     .navbar {
         margin-bottom: 7.2rem;
         height: 7.2rem;
+        max-width: calc(100% - 4rem);
     }
 
     h1 {
@@ -187,6 +201,7 @@ h1 {
 
     .navbar {
         margin-bottom: 4.8rem;
+        max-width: calc(100% - 8rem);
     }
 
     .brand-link {
